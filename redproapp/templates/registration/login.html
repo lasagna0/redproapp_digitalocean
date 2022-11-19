@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="{% static 'login/fonts/icomoon/style.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'login/css/owl.carousel.min.css' %}" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'login/css/bootstrap.min.css' %}" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'login/css/style.css' %}" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="d-lg-flex half">
+      <div
+        class="bg order-1 order-md-2"
+        style="background-image: url('{% static 'login/images/bg_1.jpg' %}')"
+
+
+      ></div>
+      <div class="contents order-2 order-md-1">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7">
+              <h3>Bienvenido al segundo encuentro
+                 RedPro: Barranquilla 2022</h3>
+              <p class="mb-4">
+                Inicia sesion para continuar con la app del evento.
+              </p>
+
+{% block content %}
+
+{% if form.errors %}
+<p>Tus datos no coinciden. Intenta nuevamente.</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% endif %}
+              <form method="post" action ="{% url 'login' %}">
+                {% csrf_token %}
+                <div class="form-group first">
+                  <label for="username">Usuario</label>
+                  <!-- <input
+                    type="text"
+                    class="form-control"
+                    placeholder="vicky.osorio"
+                    id="username",
+                    action="{% url 'login' %}"
+                  /> -->
+                  {{ form.username }}
+
+                </div>
+                <div class="form-group last mb-3">
+                  <label for="password">Contreaseña</label>
+                  <!-- <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Tu contraseña"
+                    id="password"
+                  /> -->
+                  <td>{{ form.password }}</td>
+                </div>
+
+                <div class="d-flex mb-5 align-items-center">
+                  <label class="control control--checkbox mb-0"
+                    ><span class="caption">Te recuerdo?</span>
+                    <input type="checkbox" checked="checked" />
+                    <div class="control__indicator"></div>
+                  </label>
+                 
+                </div>
+
+                <input
+                  type="submit"
+                  value="Iniciar sesion"
+                  class="btn btn-block btn-primary"
+                />
+                <input type="hidden" name="next" value="{{ next }}" />
+                
+              </form>
+
+
+{% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
