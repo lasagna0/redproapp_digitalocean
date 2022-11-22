@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "False"
 
-ALLOWED_HOSTS = ["plankton-app-2-jjnyd.ondigitalocean.app", "127.0.0.1"]
+ALLOWED_HOSTS = ["plankton-app-2-jjnyd.ondigitalocean.app", "127.0.0.1", "146.190.40.166"]
 
 
 LOGIN_REDIRECT_URL = "/"
