@@ -139,6 +139,8 @@ PROJECT_ROOT = os.path.normpath(os.path.dirname(__file__))
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, '..', 'static'),
 )
+DISABLE_COLLECTSTATIC=1
+
 STATIC_URL = '/static/'
 
 
