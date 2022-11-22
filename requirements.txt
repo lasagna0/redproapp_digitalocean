@@ -1,5 +1,5 @@
 dj_database_url==1.0.0
-Django==3.2.14
+Django
 gunicorn
 django_import_export==3.0.1
 import_export==0.2.67.dev6
