@@ -48,8 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'redproapp',
-    ## digital ocean
-    'django.contrib.sites',
+
    
 ]
 
