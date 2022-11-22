@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gn!l=(n5@vos(8^#7l%lz19h378hmb_j9s2m^en65=h-%&5v4#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 LOGIN_REDIRECT_URL = "/"
 
@@ -129,7 +129,3 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-import django_heroku
-django_heroku.settings(locals())

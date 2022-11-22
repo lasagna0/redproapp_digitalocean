@@ -27,5 +27,17 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
   path("accounts/", include("django.contrib.auth.urls")),  # new
+  path('probarranquilla/', views.probarranquilla, name='probarranquilla'),
+    path('proantioquia/', views.proantioquia, name='proantioquia'),
+    path('probogota/', views.probogota, name='probogota'),
+    path('propacifico/', views.propacifico, name='propacifico'),
+    path('prorisaralda/', views.prorisaralda, name='prorisaralda'),
+    path('prosantamarta/', views.prosantamarta, name='prosantamarta'),
+    path('prosantander/', views.prosantander, name='prosantander'),
+    path('protolima/', views.protolima, name='protolima'),
+    
+
+
+path('userdata/', views.userdata, name='userdata'),
 
 ]

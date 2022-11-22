@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/slicknav.css' %}">
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
 </head>
 
 <body>
@@ -32,49 +32,56 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area ">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center justify-content-between no-gutters">
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                    <img src= "" alt="">
-                                </a>
+        <header>
+            <div class="header-area ">
+                <div id="sticky-header" class="main-header-area ">
+                    <div class="container-fluid p-0">
+                        <div class="row align-items-center justify-content-between no-gutters">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo-img">
+                                    <a href="index.html">
+                                        <img src= "" alt="">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="{% url 'index' %}">home</a></li>
-                                        <li><a href="{% url 'index' %}">Conoce las PRO</a></li>
-                                        <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="{% url 'index' %}">Asistentes</a></li>
-                                                <li><a href="{% url 'index' %}">Asistentes</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a class="active" href="{% url 'index' %}">home</a></li>
+                                            <li><a href="{% url 'index' %}">Conoce las PRO</a></li>
+                                            <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="{% url 'probarranquilla' %}">Probarranquilla</a></li>
+                                                    <li><a href="{% url 'proantioquia' %}">Proantioquia</a></li>
+                                                    <li><a href="{% url 'probogota' %}">Probogota</a></li>
+                                                    <li><a href="{% url 'propacifico' %}">Propacifico</a></li>
+                                                    <li><a href="{% url 'prorisaralda' %}">Prorisaralda</a></li>
+                                                    <li><a href="{% url 'prosantamarta' %}">Prosantamarta</a></li>
+                                                    <li><a href="{% url 'prosantander' %}">Prosantander</a></li>
+                                                    <li><a href="{% url 'protolima' %}">Protolima</a></li>
+
+                                                
+
+                                                </ul>
+                                        
+                                            </li>
+                                            <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                            <div class="buy_ticket">
-                                <a href="{% url 'logout'%}?next={{request.path}}" class="boxed-btn-white">Salir</a>
+                            <div class="col-xl-2 col-lg-2 d-none d-lg-block">
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- header-end -->
+        </header>
+        <!-- header-end -->
 
     <!-- slider_area_start -->
     <div class="slider_area slider_bg_1">
@@ -424,9 +431,16 @@
     <!-- resister_book_end -->
 
     <!-- brand_area_start -->
+
     <div class="brand_area">
         <div class="container">
+            
             <div class="row">
+                <div class="serction_title_large mb-95">
+                    <h3>
+                        Patroncinadores
+                    </h3>
+                </div>
                 <div class="col-xl-12">
                     <div class="brand_active owl-carousel">
                         <div class="single_brand text-center">
@@ -461,99 +475,6 @@
     </div>
     <!-- brand_area_end -->
 
-    <!-- faq_area_Start -->
-    <div class="faq_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="serction_title_large mb-95">
-                        <h3>
-                            Frequently Ask
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
-                                        <img src= " {% static 'website/img/barnd/info' %}.png" alt=""> Is WordPress hosting worth it?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        <img src= " {% static 'website/img/barnd/info' %}.png" alt="">What are the advantages <span>of WordPress
-                                            hosting over shared?</span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        <img src= " {% static 'website/img/barnd/info' %}.png" alt=""> Where the Venue?
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="heading_4">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-                                        <img src= " {% static 'website/img/barnd/info' %}.png" alt=""> How can I attend <span>the Event from
-                                            Asia?</span>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion"
-                                style="">
-                                <div class="card-body">
-                                    Our set he for firmament morning sixth subdue darkness creeping gathered divide our
-                                    let god moving. Moving in fourth air night bring upon
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- faq_area_end -->
 
     <!-- footer_start -->
     <footer class="footer footer_bg_1">
