@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-gn!l=(n5@vos(8^#7l%lz19h378hmb_j9s2m^en65=h-%&5v4#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+
 
 LOGIN_REDIRECT_URL = "/"
 
