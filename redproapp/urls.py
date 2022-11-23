@@ -35,9 +35,7 @@ urlpatterns = [
     path('prosantamarta/', views.prosantamarta, name='prosantamarta'),
     path('prosantander/', views.prosantander, name='prosantander'),
     path('protolima/', views.protolima, name='protolima'),
-    
-
-
+    path('diauno/', views.diauno, name='diauno'),
 path('userdata/', views.userdata, name='userdata'),
 
 ]

@@ -45,6 +45,10 @@ def prosantander (request):
 def protolima(request):
     return render(request, 'asistentes/protolima.html', {})
 
+@login_required
+def diauno(request):
+    return render(request, 'gallery/diauno.html', {})
+
 
 
 from tablib import Dataset
