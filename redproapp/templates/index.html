@@ -88,10 +88,14 @@
                                           
 
                                                 </ul>
-                                                <li><a href="{% url 'compromiso' %}">Compromiso PRO</a></li>
-            
-                                        
+                                                <li><a href="#">Compromiso PRO<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+
+                                                        <li><a href="{% url 'compromiso' %}">Proyectos</a></li>
+                                                        <li><a href="{% url 'ejes' %}">Ejes</a></li>
                                             </li>
+                                            </ul>
+                    
                                             
                                             <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
                                         </ul>

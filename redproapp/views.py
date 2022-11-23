@@ -95,6 +95,13 @@ def lineamientos(request):
 def comunicado(request):
     return render(request, 'comunicado.html', {})
 
+@login_required
+def ejes(request):
+    return render(request, 'ejes.html', {})
+
+
+
+
 
 
 

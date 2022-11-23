@@ -50,5 +50,6 @@ path('diados/', views.diados, name='diados'),
 path('compromiso/', views.compromiso, name='compromiso'),
 path('comunicado/', views.comunicado, name='comunicado'),
 path('lineamientos/', views.lineamientos, name='lineamientos'),
+path('ejes/', views.ejes, name='ejes'),
 
 ]
