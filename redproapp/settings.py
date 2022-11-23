@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "False"
 
-ALLOWED_HOSTS = ["146.190.40.166", "localhost", "127.0.0.1", '146.190.40.166' ]
+ALLOWED_HOSTS = ["146.190.40.166", "localhost", "127.0.0.1", '146.190.40.166', 'redpro.probarranquilla.org']
 
 
 LOGIN_REDIRECT_URL = "/"
