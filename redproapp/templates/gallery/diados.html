@@ -1,0 +1,324 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recuerdos - Dia 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'gallery/diados/css/style.css' %}">
+    
+  </head>
+  <body>
+  
+
+  <div class="site-wrap">
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="header-bar d-flex d-lg-block align-items-center">
+    <div class="site-logo">
+      <a href="{% url 'index' %}">BACK</a>
+    </div>
+    
+    <div class="d-inline-block d-xl-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+    <div class="main-menu">
+      <ul class="js-clone-nav">
+        <li><a class="active" href="{% url 'index' %}">Volver a home</a></li>
+        <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </header> 
+  <main class="main-content">
+    <div class="container-fluid photos">
+
+      <div class="row pt-4 mb-5 text-center">
+        <div class="col-12">
+          <h2 class="text-white mb-4">'MEMORIAS: DIA 2' &mdash; 17 Fotos</h2>
+        </div>
+      </div>
+
+      <div class="row align-items-stretch">
+        
+        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+          <a href="{% static 'gallery/diados/ 1.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+            <img src="{% static 'gallery/diados/ 1.jpeg' %}" alt="Image" class="img-fluid">
+            <div class="photo-text-more">
+              <span class="icon icon-search"></span>
+            </div>
+          </a>
+        </div>
+
+      <!-- do the same with 10 more photos -->
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 2.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 2.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 3.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 3.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 4.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 4.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 5.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 5.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 6.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 7.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 8.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 8.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 9.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 9.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 10.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 10.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 11.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 11.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 12.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 12.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 13.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 13.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 14.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 14.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 15.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 15.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 16.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 16.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 17.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 17.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+<!-- 
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 18.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 18.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 19.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 19.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 20.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 20.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 21.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 21.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 22.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 23.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 24.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 24.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 25.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 25.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 26.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 26.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
+        <a href="{% static 'gallery/diados/ 27.jpeg' %}" class="d-block photo-item" data-fancybox="gallery">
+          <img src="{% static 'gallery/diados/ 27.jpeg' %}" alt="Image" class="img-fluid">
+          <div class="photo-text-more">
+            <span class="icon icon-search"></span>
+          </div>
+        </a>
+      </div> -->
+        
+
+      </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center py-5">
+          <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Probarranquilla &copy;<script>document.write(new Date().getFullYear());</script> | Hecho por el area de Data e Información  | Saludos desde Barranquilla</a>  
+
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div> <!-- .site-wrap -->
+
+  <script src="{% static 'gallery/diados/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/popper.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'gallery/diados/js/aos.js' %}"></script>
+
+  <script src="{% static 'gallery/diados/js/jquery.fancybox.min.js' %}"></script>
+
+  <script src="{% static 'gallery/diados/js/main.js' %}"></script>
+    
+  </body>
+
+</html>

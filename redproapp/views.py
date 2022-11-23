@@ -79,6 +79,10 @@ def conprotolima(request):
     return render(request, 'conprotolima.html', {})
 
 
+@login_required
+def diados(request):
+    return render(request, 'gallery/diados.html', {})
+
 
 from tablib import Dataset
 from .resources import UserResource
