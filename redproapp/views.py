@@ -83,6 +83,20 @@ def conprotolima(request):
 def diados(request):
     return render(request, 'gallery/diados.html', {})
 
+@login_required
+def compromiso(request):
+    return render(request, 'compromiso.html', {})
+
+@login_required
+def lineamientos(request):
+    return render(request, 'lineamientos.html', {})
+
+@login_required
+def comunicado(request):
+    return render(request, 'comunicado.html', {})
+
+
+
 
 from tablib import Dataset
 from .resources import UserResource

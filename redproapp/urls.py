@@ -46,6 +46,9 @@ path('conprorisaralda/', views.conprorisaralda, name='conprorisaralda'),
 path('conprosantamarta/', views.conprosantamarta, name='conprosantamarta'),
 path('conprosantander/', views.conprosantander, name='conprosantander'),
 path('conprotolima/', views.conprotolima, name='conprotolima'),
-path('diados', views.diados, name='diados'),
+path('diados/', views.diados, name='diados'),
+path('compromiso/', views.compromiso, name='compromiso'),
+path('comunicado/', views.comunicado, name='comunicado'),
+path('lineamientos/', views.lineamientos, name='lineamientos'),
 
 ]
