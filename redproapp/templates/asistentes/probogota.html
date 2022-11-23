@@ -30,78 +30,88 @@
 <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]--> <header>
-            <div class="header-area ">
-                <div id="sticky-header" class="main-header-area ">
-                    <div class="container-fluid p-0">
-                        <div class="row align-items-center justify-content-between no-gutters">
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo-img">
-                                   
-                                        <img src= "" alt="">
-                                    </a>
+        <![endif]--> 
+        
+            <header>
+                <div class="header-area ">
+                    <div id="sticky-header" class="main-header-area ">
+                        <div class="container-fluid p-0">
+                            <div class="row align-items-center justify-content-between no-gutters">
+                                <div class="col-xl-2 col-lg-2">
+                                    <div class="logo-img">
+                                       
+                                            <img src= "" alt="">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a class="active" href="{% url 'index' %}">home</a></li>
-
-                                            <li><a href="#">Conoce las PRO<i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="{% url 'conprobarranquilla' %}">ProBarranquilla</a></li>
-                                                <li><a href="{% url 'conproantioquia' %}">Proantioquia</a></li>
-                                                <li><a href="{% url 'conprobogota' %}">Probogota</a></li>
-                                                <li><a href="{% url 'conpropacifico' %}">Propacifico</a></li>
-                                                <li><a href="{% url 'conprorisaralda' %}">Prorisaralda</a></li>
-                                                <li><a href="{% url 'conprosantamarta' %}">Prosantamarta</a></li>
-                                                <li><a href="{% url 'conprosantander' %}">Prosantander</a></li>
-                                                <li><a href="{% url 'conprotolima' %}">Protolima</a>
-                                                </ul>
-                                            </li>
-
-
-                                            <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
+                                <div class="col-xl-8 col-lg-8">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a class="active" href="{% url 'index' %}">home</a></li>
+    
+                                                <li><a href="#">Conoce las PRO<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="{% url 'probarranquilla' %}">ProBarranquilla</a></li>
-                                                    <li><a href="{% url 'proantioquia' %}">Proantioquia</a></li>
-                                                    <li><a href="{% url 'probogota' %}">Probogota</a></li>
-                                                    <li><a href="{% url 'propacifico' %}">Propacifico</a></li>
-                                                    <li><a href="{% url 'prorisaralda' %}">Prorisaralda</a></li>
-                                                    <li><a href="{% url 'prosantamarta' %}">Prosantamarta</a></li>
-                                                    <li><a href="{% url 'prosantander' %}">Prosantander</a></li>
-                                                    <li><a href="{% url 'protolima' %}">Protolima</a></li>
-
-                                                
-
-                                                </ul>
-                                        
-                                            </li>
-                                            <li><a href="#">Memorias <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="{% url 'diauno' %}">Dia 1</a></li>
-                                          
-
-                                                </ul>
-                                        
-                                            </li>
+                                                    <li><a href="{% url 'conprobarranquilla' %}">ProBarranquilla</a></li>
+                                                    <li><a href="{% url 'conproantioquia' %}">Proantioquia</a></li>
+                                                    <li><a href="{% url 'conprobogota' %}">Probogota</a></li>
+                                                    <li><a href="{% url 'conpropacifico' %}">Propacifico</a></li>
+                                                    <li><a href="{% url 'conprorisaralda' %}">Prorisaralda</a></li>
+                                                    <li><a href="{% url 'conprosantamarta' %}">Prosantamarta</a></li>
+                                                    <li><a href="{% url 'conprosantander' %}">Prosantander</a></li>
+                                                    <li><a href="{% url 'conprotolima' %}">Protolima</a>
+                                                    </ul>
+                                                </li>
+    
+    
+                                                <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'probarranquilla' %}">ProBarranquilla</a></li>
+                                                        <li><a href="{% url 'proantioquia' %}">Proantioquia</a></li>
+                                                        <li><a href="{% url 'probogota' %}">Probogota</a></li>
+                                                        <li><a href="{% url 'propacifico' %}">Propacifico</a></li>
+                                                        <li><a href="{% url 'prorisaralda' %}">Prorisaralda</a></li>
+                                                        <li><a href="{% url 'prosantamarta' %}">Prosantamarta</a></li>
+                                                        <li><a href="{% url 'prosantander' %}">Prosantander</a></li>
+                                                        <li><a href="{% url 'protolima' %}">Protolima</a></li>
+    
+                                                    
+    
+                                                    </ul>
                                             
-                                            <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
-                                        </ul>
-                                    </nav>
+                                                </li>
+                                                <li><a href="#">Galería de fotos <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="{% url 'diauno' %}">Dia 1</a></li>
+                                                        <li><a href="{% url 'diados' %}">Dia 2</a></li>
+    
+                                              
+    
+                                                    </ul>
+                                                    <li><a href="#">Compromiso PRO<i class="ti-angle-down"></i></a>
+                                                        <ul class="submenu">
+    
+                                                            <li><a href="{% url 'compromiso' %}">Proyectos</a></li>
+                                                            <li><a href="{% url 'ejes' %}">Ejes</a></li>
+                                                </li>
+                                                </ul>
+                        
+                                                
+                                                <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+                                </div>
+                                <div class="col-12">
+                                    <div class="mobile_menu d-block d-lg-none"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <!-- header-end -->
     <!-- slider_area_start -->
     <div class="slider_area slider_bg_1">
