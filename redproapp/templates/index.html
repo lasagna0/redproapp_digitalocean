@@ -269,13 +269,16 @@
         </div>
     </div> -->
     <!-- speakers_end-->
-    <a id="schedule">
+    <a id="schedule"></a>
     <!-- event_area_start -->
     <div class="event_area">
-        
-        <iframe src="{% static 'website/pdf/programa.pdf' %}" width="100%" height="1000px" frameborder="0" allowfullscreen></iframe>
-
+     <!-- photo -->
+     <img src="{% static '/website/pdf/programa.png' %}" alt="", width="100%">
+     <div class="col-xl-12">
+        <a href="{% static '/website/pdf/programa.pdf' %}" class="boxed-btn-red">Descargar</a>
     </div>
+    </div>
+
     
     <!-- event_area_end -->
 
@@ -286,10 +289,13 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="resister_text text-center">
-                        <h3>Trabajamos por el futuro de Colombia <br>
+                        <h3>Conoce nuestra lista de invitados <br>
+                            Es bueno tenerte en casa!
                           </h3>
-                        <a href="{% url 'conprobarranquilla' %}" class="boxed-btn-white"> Conoce las PRO </a>
+                          <a href="{% static 'invitados.pdf' %}" class="boxed-btn-white"> Ver listado </a>
+
                     </div>
+                    
                 </div>
             </div>
         </div>
