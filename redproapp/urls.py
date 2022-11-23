@@ -37,5 +37,14 @@ urlpatterns = [
     path('protolima/', views.protolima, name='protolima'),
     path('diauno/', views.diauno, name='diauno'),
 path('userdata/', views.userdata, name='userdata'),
+path('programa/', views.programa, name='programa'),
+path('conprobarranquilla/', views.conprobarranquilla, name='conprobarranquilla'),
+path('conproantioquia/', views.conproantioquia, name='conproantioquia'),
+path('conprobogota/', views.conprobogota, name='conprobogota'),
+path('conpropacifico/', views.conpropacifico, name='conpropacifico'),
+path('conprorisaralda/', views.conprorisaralda, name='conprorisaralda'),
+path('conprosantamarta/', views.conprosantamarta, name='conprosantamarta'),
+path('conprosantander/', views.conprosantander, name='conprosantander'),
+path('conprotolima/', views.conprotolima, name='conprotolima'),
 
 ]

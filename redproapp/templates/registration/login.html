@@ -10,7 +10,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Relaway:wght@100&display=swap"
       rel="stylesheet"
     />
 
@@ -36,7 +36,7 @@
               <h3>Bienvenido al segundo encuentro
                  RedPro: Barranquilla 2022</h3>
               <p class="mb-4">
-                Inicia sesion para continuar con la app del evento.
+                Inicia sesión para continuar con la app del evento.
               </p>
 
 {% block content %}
@@ -47,10 +47,9 @@
 
 {% if next %}
     {% if user.is_authenticated %}
-    <p>Your account doesn't have access to this page. To proceed,
-    please login with an account that has access.</p>
+    <p>No tienes acceso a esta pagina </p>
     {% else %}
-    <p>Please login to see this page.</p>
+    <p>Inicia nuevamente sesión </p>
     {% endif %}
 {% endif %}
               <form method="post" action ="{% url 'login' %}">
@@ -89,7 +88,7 @@
 
                 <input
                   type="submit"
-                  value="Iniciar sesion"
+                  value="Iniciar sesión"
                   class="btn btn-block btn-primary"
                 />
                 <input type="hidden" name="next" value="{{ next }}" />

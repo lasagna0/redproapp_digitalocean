@@ -31,7 +31,6 @@
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-
         <header>
             <div class="header-area ">
                 <div id="sticky-header" class="main-header-area ">
@@ -39,7 +38,7 @@
                         <div class="row align-items-center justify-content-between no-gutters">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo-img">
-                                    <a href="index.html">
+                                   
                                         <img src= "" alt="">
                                     </a>
                                 </div>
@@ -49,10 +48,24 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="{% url 'index' %}">home</a></li>
-                                            <li><a href="{% url 'index' %}">Conoce las PRO</a></li>
+
+                                            <li><a href="#">Conoce las PRO<i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="{% url 'conprobarranquilla' %}">ProBarranquilla</a></li>
+                                                <li><a href="{% url 'conproantioquia' %}">Proantioquia</a></li>
+                                                <li><a href="{% url 'conprobogota' %}">Probogota</a></li>
+                                                <li><a href="{% url 'conpropacifico' %}">Propacifico</a></li>
+                                                <li><a href="{% url 'conprorisaralda' %}">Prorisaralda</a></li>
+                                                <li><a href="{% url 'conprosantamarta' %}">Prosantamarta</a></li>
+                                                <li><a href="{% url 'conprosantander' %}">Prosantander</a></li>
+                                                <li><a href="{% url 'conprotolima' %}">Protolima</a>
+                                                </ul>
+                                            </li>
+
+
                                             <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="{% url 'probarranquilla' %}">Probarranquilla</a></li>
+                                                    <li><a href="{% url 'probarranquilla' %}">ProBarranquilla</a></li>
                                                     <li><a href="{% url 'proantioquia' %}">Proantioquia</a></li>
                                                     <li><a href="{% url 'probogota' %}">Probogota</a></li>
                                                     <li><a href="{% url 'propacifico' %}">Propacifico</a></li>
@@ -66,6 +79,15 @@
                                                 </ul>
                                         
                                             </li>
+                                            <li><a href="#">Memorias <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="{% url 'diauno' %}">Dia 1</a></li>
+                                          
+
+                                                </ul>
+                                        
+                                            </li>
+                                            
                                             <li><a href="{% url 'logout'%}?next={{request.path}}">Cerrar Sesión</a></li>
                                         </ul>
                                     </nav>
@@ -118,119 +140,7 @@
         </div>
     </div>
     <!-- slider_area_end -->
-
-    <!-- speakers_start -->
-    <div class="speakers_area inc_padd">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-md-6">
-                
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 6.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Felipe López H.</h3>
-                            <p>Presidente Chevrolet Caminos</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 1.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Lina Álvarez V.</h3>
-                            <p>Gerente ANDI Risaralda - Quindío</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 5.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Liliana Restrepo A.</h3>
-                            <p>Presidenta Frisby S.A.</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 2.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Luis J. Arango B.</h3>
-                            <p>Presidente PCP - Partes y Complementos S.A.S</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 offset-xl-2 col-md-6">
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 3.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Diego Pineda J.</h3>
-                            <p>Presidente Co&Tex S.A.S.</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 4.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Carlos A. Mazeneth D.</h3>
-                            <p>Presidente Efigas S.A.</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker_thumb">
-                            <img src="{% static 'website/img/speakers/prorisaralda/ 7.png' %}" alt="">
-                            <div class="hover_overlay">
-                                <div class="social_icon">
-                                  
-                                </div>
-                            </div>
-                        </div>
-                        <div class="speaker_name text-center">
-                            <h3>Mauricio Vega L.</h3>
-                            <p>Presidente Autopistas del café</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    <iframe src="{% static 'website/pdf/asistentes/prorisaralda.pdf' %}" width="100%" height="1000px" frameborder="0" allowfullscreen></iframe>
 
 
     <!-- brand_area_start -->

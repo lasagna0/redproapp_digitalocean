@@ -49,10 +49,24 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a class="active" href="{% url 'index' %}">home</a></li>
-                                            <li><a href="{% url 'index' %}">Conoce las PRO</a></li>
+
+                                            <li><a href="#">Conoce las PRO<i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="{% url 'conprobarranquilla' %}">ProBarranquilla</a></li>
+                                                <li><a href="{% url 'conproantioquia' %}">Proantioquia</a></li>
+                                                <li><a href="{% url 'conprobogota' %}">Probogota</a></li>
+                                                <li><a href="{% url 'conpropacifico' %}">Propacifico</a></li>
+                                                <li><a href="{% url 'conprorisaralda' %}">Prorisaralda</a></li>
+                                                <li><a href="{% url 'conprosantamarta' %}">Prosantamarta</a></li>
+                                                <li><a href="{% url 'conprosantander' %}">Prosantander</a></li>
+                                                <li><a href="{% url 'conprotolima' %}">Protolima</a>
+                                                </ul>
+                                            </li>
+
+
                                             <li><a href="#">Asistentes <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="{% url 'probarranquilla' %}">Probarranquilla</a></li>
+                                                    <li><a href="{% url 'probarranquilla' %}">ProBarranquilla</a></li>
                                                     <li><a href="{% url 'proantioquia' %}">Proantioquia</a></li>
                                                     <li><a href="{% url 'probogota' %}">Probogota</a></li>
                                                     <li><a href="{% url 'propacifico' %}">Propacifico</a></li>
@@ -97,7 +111,7 @@
         <div class="slider_text">
             <div class="container">
                 <div class="position_relv">
-                    <h1 class="opcity_text d-none d-lg-block">PROBARRANQUILLA</h1>
+                    <h1 class="opcity_text d-none d-lg-block">ProBarranquilla</h1>
                     <div class="row">
                         <div class="col-xl-9">
                             <div class="title_text">
@@ -258,197 +272,11 @@
     <a id="schedule">
     <!-- event_area_start -->
     <div class="event_area">
-        <h1 class="vr_text d-none d-lg-block">AGENDA</h1>
-        <div class="container">
-            <div class="double_line">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3">
-                        <div class="date">
-                            <h3>22 de Noviembre</h3>
-                            <p>Jornada de relacionamiento</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-9">
-                        <div class="single_speaker">
-                        
-                            <div class="speaker-name">
-                                <div class="heading d-flex justify-content-between align-items-center">
-                                    <span>Barranquilla, una ciudad que le da la cara al rio</span>
-                                    <div class="time">
-                                       4:00 p.m - 9:00 p.m
-                                    </div>
-                                </div>
-                                <p>Recorrido fluvial por el rio Magdalena</p>
-                            </div>
-                        </div>
-                        <div class="single_speaker">
-                            <div class="speaker-name">
-                                <div class="heading d-flex justify-content-between align-items-center">
-                                    <span>Articulación público-privada, </span>
-                                    <div class="time">
-                                    </div>
-                                </div>
-                                <h3>clave para el desarrollo del territorio</h3>
-                                <p>Experiencia gastronómica en compañía de la alcaldía de Barranquilla y la gobernación del Atlántico </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3">
-                    <div class="date">
-                        <h3>23 de Noviembre</h3>
-                        <p>II Encuentro empresarios Red Pro  </p>
-                        <p>Hotel Marriott Barranquilla.</p>
-                    </div>
-                </div>
-                <div class="col-xl-9 col-lg-9">
-                    <div class="single_speaker">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Registro </span>
-                                <div class="time">
-                               8:00 a.m
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Palabras de bienvenida</span>
-                        
-                                <div class="time">
-                                    9:00 a.m.
-                                </div>
-                            </div>
-                            <p>Aquiles Mercado, Presidente Consejo Directivo </p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Palabras de bienvenida</span>
-                                <div class="time">
-                                    9:05 a.m.= </div>
-                            </div>
-                            <p>Vicky Osorio, Directora Ejecutiva ProBarranquilla</p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Diálogo con Juan Fernandez,
-                                </span>
-                            
-                                <div class="time">
-                                  9:20 a.m.</div>
-                            </div>
-                            <h3> Asuntos Empresariales Presidencia de Colombia</h3>
-                            <p>Modera: Maria Bibiana Botero, Presidenta Proantioquia
-                            </p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
+        
+        <iframe src="{% static 'website/pdf/programa.pdf' %}" width="100%" height="1000px" frameborder="0" allowfullscreen></iframe>
 
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Diálogo "Perspectivas de
-                                </span>
-                                <div class="time">
-                                    11:00 a.m. </div>
-                            </div>
-                            <h3> desarrollo para Colombia" -</h3>
-                            <h3>Jorge Iván González, Director DNP</h3>
-                            <p>Modera: Maria Bibiana Botero, Presidenta Proantioquia
-                            </p>
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Almuerzo
-                                </span>
-                                <div class="time">
-                                    12:30 p.m.</div>
-                            </div>
-                          
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Foto oficial del evento
-                                </span>
-                                <div class="time">
-                                    1:40 p.m.</div>
-                            </div>
-                          
-                        </div>
-                    </div>
-
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Presentación avances 
-                                </span>
-                                <div class="time">
-                                    2:00 p.m.</div>
-                            </div>
-                            <h3>Compromiso Pro</h3>
-                          
-                        </div>
-                    </div>
-
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Resultados encuesta reputación
-                                </span>
-                                <div class="time">
-                                    2:20 p.m</div>
-                            </div>
-                            <h3>empresarial 
-                                - YanHaas</h3>
-                          
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Lectura de comunicado 
-                                </span>
-                                <div class="time">
-                                    2:45 p.m</div>
-                            </div>
-                            <h3>de prensa del encuentro</h3>
-                          
-                        </div>
-                    </div>
-                    <div class="single_speaker">
-
-                        <div class="speaker-name">
-                            <div class="heading d-flex justify-content-between align-items-center">
-                                <span>Conclusiones y cierre Encuentro Red Pro
-                                </span>
-                                <div class="time">
-                                    3:00 p.m. a 3:30 p.m.</div>
-                            </div>
-                          
-                        </div>
-                    </div>
-                    
-
-                </div>
-            </div>
-        </div>
     </div>
+    
     <!-- event_area_end -->
 
 
@@ -460,7 +288,7 @@
                     <div class="resister_text text-center">
                         <h3>Trabajamos por el futuro de Colombia <br>
                           </h3>
-                        <a href="conocelaspro" class="boxed-btn-white"> Conoce las PRO </a>
+                        <a href="{% url 'conprobarranquilla' %}" class="boxed-btn-white"> Conoce las PRO </a>
                     </div>
                 </div>
             </div>
@@ -527,7 +355,7 @@
                         <div class="col-xl-12">
                             <p class="copy_right text-center">
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Probarranquilla &copy;<script>document.write(new Date().getFullYear());</script> | Hecho con <i class="fa fa-heart-o" aria-hidden="true"></i> por el area de Data e Información  | Saludos desde Barranquilla</a>  
+ProBarranquilla &copy;<script>document.write(new Date().getFullYear());</script> | Hecho con <i class="fa fa-heart-o" aria-hidden="true"></i> por el area de Data e Información  | Saludos desde Barranquilla</a>  
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>

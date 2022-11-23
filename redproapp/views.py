@@ -49,6 +49,35 @@ def protolima(request):
 def diauno(request):
     return render(request, 'gallery/diauno.html', {})
 
+@login_required
+def programa(request):
+    return render(request, 'programa.html', {})
+
+@login_required
+def conprobarranquilla(request):
+    return render(request, 'conprobarranquilla.html', {})
+@login_required
+def conproantioquia(request):
+    return render(request, 'conproantioquia.html', {})
+@login_required
+def conprobogota(request):
+    return render(request, 'conprobogota.html', {})
+@login_required
+def conpropacifico(request):
+    return render(request, 'conpropacifico.html', {})
+@login_required
+def conprorisaralda(request):
+    return render(request, 'conprorisaralda.html', {})
+@login_required
+def conprosantamarta(request):
+    return render(request, 'conprosantamarta.html', {})
+@login_required
+def conprosantander(request):
+    return render(request, 'conprosantander.html', {})
+@login_required
+def conprotolima(request):
+    return render(request, 'conprotolima.html', {})
+
 
 
 from tablib import Dataset
