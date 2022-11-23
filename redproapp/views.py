@@ -45,7 +45,6 @@ def prosantander (request):
 def protolima(request):
     return render(request, 'asistentes/protolima.html', {})
 
-@login_required
 def diauno(request):
     return render(request, 'gallery/diauno.html', {})
 
@@ -79,7 +78,6 @@ def conprotolima(request):
     return render(request, 'conprotolima.html', {})
 
 
-@login_required
 def diados(request):
     return render(request, 'gallery/diados.html', {})
 
