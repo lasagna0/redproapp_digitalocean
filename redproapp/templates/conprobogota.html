@@ -136,8 +136,18 @@
         </div>
     </div>
     <!-- slider_area_end -->
-    <embed src="{% static 'website/pdf/asistentes/probogota.pdf' %}"  width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
 
+    <div id="adobe-dc-view" style="height: 500px; width: 100%;"></div>
+    <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+            var adobeDCView = new AdobeDC.View({clientId: "57038a4be55e484f8985e00e9ab25ef6", divId: "adobe-dc-view"});
+            adobeDCView.previewFile({
+                content:{location: {url: "http://redpro.probarranquilla.org/static/website/pdf/asistentes/probogota.pdf"}},
+                metaData:{fileName: "probogota.pdf"}
+            }, {embedMode: "SIZED_CONTAINER"});
+        });
+    </script>
     <!-- brand_area_start -->
     <div class="brand_area">
         <div class="container">
